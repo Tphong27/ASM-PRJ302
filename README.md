@@ -1,5 +1,5 @@
 # ASM-PRJ302
-Phát triển ứng dụng Quản lý đăng kiểm khí thải xe máy 
+Phát triển ứng dụng Quản lý đăng kiểm khí thải phương tiện
 
 Mục tiêu
 
