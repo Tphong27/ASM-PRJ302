@@ -12,6 +12,7 @@ Cơ sở dữ liệu: SQL Server
 Kiến trúc: MVC (Model-View-Controller)
 Phân quyền: Sử dụng Filter
 Giao diện: Responsive, thân thiện với người dùng
+
 🔹 Tính năng chính
 ✔ Quản lý đăng ký & kiểm tra khí thải: Chủ phương tiện đăng ký kiểm định, theo dõi lịch sử; cơ sở kiểm định sắp xếp lịch và ghi nhận kết quả kiểm tra.
 ✔ Theo dõi trạng thái đăng kiểm: Cập nhật trạng thái xe ("Đạt", "Không đạt"), gửi thông báo nhắc nhở.
