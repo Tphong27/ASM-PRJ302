@@ -7,7 +7,7 @@ Mục tiêu
 
 🔹 Công nghệ sử dụng
 
-    - Frontend: HTML5, CSS3, Bootstrap 5, JavaScript
+    - Frontend: HTML5, CSS3, Bootstrap 5
 
     - Backend: Servlet, JSP (JSTL, CustomTag), JDBC
 
