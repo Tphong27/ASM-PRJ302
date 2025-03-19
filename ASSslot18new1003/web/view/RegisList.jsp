@@ -6,7 +6,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Station Screen</title>
+        <title>Registration List</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
@@ -52,7 +52,6 @@
                 <table class="table table-striped table-bordered  text-center">
                     <thead class="table-dark ">
                         <tr>
-                            <th>Vehicle ID</th>
                             <th>Plate Number</th>
                             <th>Brand</th>
                             <th>Model</th>
@@ -74,7 +73,7 @@
                                 <input type="hidden" name="recordid" value="${lr.recordID}">
                                 <input type="hidden" name="reDate" value="${lr.registrationDate}">
 
-                                <td class="align-middle">${lr.vehicles.vehicleID}</td>
+                                
                                 <td class="align-middle">${lr.vehicles.plateNumber}</td>
                                 <td class="align-middle">${lr.vehicles.brand.brandName}</td>
                                 <td class="align-middle">${lr.vehicles.model.modelName}</td>
@@ -83,7 +82,11 @@
                                 <td class="align-middle">${lr.registrationDate}</td>
                                 <td class="align-middle">
                                     <input type="date" name="InspectionDate" class="form-control text-center" required>
-                                    <div class="error-message">${error}</div>
+                                    <div class="error-message text-danger">
+                                        <c:if test="${not empty errorMap[lr.recordID]}">
+                                            ${errorMap[lr.recordID]}
+                                        </c:if>
+                                    </div>
                                 </td>
                                 <td class="align-middle">
                                     <button type="submit" class="btn btn-primary w-100">Choose Inspector</button>

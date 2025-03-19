@@ -11,6 +11,8 @@ import dao.*;
 import dao.VehiclesDAO;
 import jakarta.servlet.http.HttpSession;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import model.*;
 
 public class InspectionRecordsServlet extends HttpServlet {
@@ -103,21 +105,31 @@ public class InspectionRecordsServlet extends HttpServlet {
                 request.setAttribute("stationid", stationid);
                 request.setAttribute("InspectionDate", InspectionDate);
 
-                String reDate = request.getParameter("reDate");
-                Date RegistionDate = java.sql.Date.valueOf(reDate);
-                if (InspectionDate.before(RegistionDate)) {
-                    String error = "Date " + InspectionDate + " not valid";
-                    request.setAttribute("error", error);
-                    ArrayList<InspectionRecords> listRecords = InspectionRecordsDAO.getInspectionRecords();
-                    for (InspectionRecords Record : listRecords) {
-                        Record.includeVehicles();
-                        Record.includeInspectionStations();
-                    }
-                    request.setAttribute("listRecords", listRecords);
-                    request.getRequestDispatcher("view/RegisList.jsp").forward(request, response);
-                    return;
-                }
+//                String reDate = request.getParameter("reDate");
+//                Date RegistionDate = java.sql.Date.valueOf(reDate);
+                Map<Integer, String> errorMap = new HashMap<>();
 
+                Date now = new Date(System.currentTimeMillis());
+                ArrayList<InspectionRecords> listRecords = InspectionRecordsDAO.getInspectionRecords();
+//                for (InspectionRecords lr : listRecords) {
+                    if (InspectionDate.before(now)) {
+//                        String error = "Date " + InspectionDate + " not valid";
+                        errorMap.put(reID, "Date "+InspectionDate+" is not valid");
+
+//                        request.setAttribute("error", error);
+                        request.setAttribute("errorMap", errorMap);
+
+//                        ArrayList<InspectionRecords> listRecords = InspectionRecordsDAO.getInspectionRecords();
+                        for (InspectionRecords Record : listRecords) {
+                            Record.includeVehicles();
+                            Record.includeInspectionStations();
+                        }
+                        request.setAttribute("listRecords", listRecords);
+                        request.getRequestDispatcher("view/RegisList.jsp").forward(request, response);
+                        return;
+//                    }
+
+                }
                 //
                 Vehicles vehicle = VehiclesDAO.getVehicleByVehicleId(vehicleid);
                 request.setAttribute("vehicle", vehicle);
@@ -191,10 +203,10 @@ public class InspectionRecordsServlet extends HttpServlet {
                 }
                 request.setAttribute("listRecords", listRecords);
                 request.getRequestDispatcher("view/MeasureList.jsp").forward(request, response);
-                
+
                 HttpSession session = request.getSession();
                 Users account = (Users) session.getAttribute("userAccount");
-                Logs log = new Logs(account.getUserId(), "Thực hiện đăng kiểm xe "+vehicle.getPlateNumber());
+                Logs log = new Logs(account.getUserId(), "Thực hiện đăng kiểm xe " + vehicle.getPlateNumber());
                 LogDAO.addLog(log);
             }
         }

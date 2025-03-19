@@ -26,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="${pageContext.request.contextPath}/vehicles?action=viewAllVeForPolice">
+                            <a class="nav-link" href="${pageContext.request.contextPath}/vehicles?action=searchVehicle">
                                 <i class="bi bi-list-check"></i> Vehicles List
                             </a>
                         </li>
