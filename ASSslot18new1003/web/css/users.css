@@ -1,0 +1,107 @@
+
+/* Info card */
+.info-card {
+    background: white;
+    border-left: 5px solid #ff4e50; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; 
+    max-width: 700px; 
+    width: 100%; 
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 25px; 
+}
+
+.info-label {
+    font-weight: bold; 
+    color: #ff4e50; 
+    min-width: 120px; 
+}
+
+.info-value {
+    flex-grow: 1; 
+    color: #333; 
+    font-size: 16px;
+    padding-left: 10px; 
+}
+.edit-info-value input {
+    flex-grow: 1;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.error-message {
+    font-size: 14px;
+    color: red;
+    margin-top: 5px; 
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn-save, .btn-cancel {
+    border: 2px solid #ff4e50;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-save {
+    background-color: #ff4e50;
+    color: white;
+}
+
+.btn-save:hover {
+    background-color: #ff2d30;
+}
+
+.btn-cancel {
+    background-color: transparent;
+    color: #ff4e50;
+}
+
+.btn-cancel:hover {
+    background-color: #ff4e50;
+    color: white;
+}
+
+/* Vạch kẻ phân cách */
+.info-separator {
+    border: 1px solid #e0e0e0; 
+    margin: 10px 0; 
+}
+
+/* Button styling */
+.btn-custom {
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #ff4e50;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: #ff4e50;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #ff4e50;
+    color: white;
+}
+.info-card .text-center {
+    margin-top: 10px;
+}
+

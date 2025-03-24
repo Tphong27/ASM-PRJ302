@@ -1,0 +1,138 @@
+/* Style cho container form */
+.choose-inspector-container {
+    padding: 30px; 
+    background: #ffffff;
+    border-radius: 15px; 
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 700px; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; 
+}
+
+.choose-inspector-container:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); 
+}
+
+/* Style cho tiêu đề form */
+.choose-inspector-title {
+    font-size: 2.2rem; 
+    color: #1e3a8a; 
+    font-weight: 600;
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+/* Style cho các hàng thông tin */
+.choose-inspector-row {
+    margin-bottom: 20px; 
+}
+
+.choose-inspector-col {
+    padding: 0 15px; 
+}
+
+.choose-inspector-label {
+    font-weight: 600;
+    color: #374151; 
+    font-size: 1.2rem; 
+    margin-bottom: 8px; 
+    display: block; 
+}
+
+.choose-inspector-value {
+    color: #4a5568;
+    font-size: 1.2rem; 
+    padding: 15px; 
+    background: #f9f9f9; 
+    border-radius: 12px; 
+    border: 1px solid #e5e7eb; 
+    word-break: break-word;
+    display: block; 
+}
+
+/* Style cho select trong form */
+.choose-inspector-select {
+    border-radius: 12px; 
+    border: 1px solid #d1d5db; 
+    padding: 14px; 
+    font-size: 1.2rem; 
+    background-color: #ffffff; 
+    width: 100%; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choose-inspector-select:focus {
+    border-color: #3b82f6; 
+    box-shadow: 0 0 6px rgba(59, 130, 246, 0.3); 
+    outline: none;
+}
+
+/* Style cho nút submit */
+.choose-inspector-button {
+    background-color: #3b82f6; 
+    color: #ffffff;
+    border: none;
+    padding: 10px 35px; 
+    font-size: 1.5rem; 
+    font-weight: 600;
+    border-radius: 12px; 
+    width: 100%;
+    margin-top: 25px; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.choose-inspector-button:hover {
+    background-color: #2563eb; 
+    transform: scale(1.0); 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .choose-inspector-container {
+        padding: 25px;
+        margin: 20px 15px;
+        max-width: 85%; 
+        width: 100%; 
+    }
+
+    .choose-inspector-title {
+        font-size: 1.8rem;
+    }
+
+    .choose-inspector-label, .choose-inspector-value, .choose-inspector-select {
+        font-size: 1.1rem;
+    }
+
+    .choose-inspector-button {
+        padding: 14px 30px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .choose-inspector-container {
+        padding: 20px;
+        margin: 15px 10px; 
+        max-width: 100%; 
+        width: 100%; 
+    }
+
+    .choose-inspector-title {
+        font-size: 1.5rem;
+    }
+
+    .choose-inspector-label, .choose-inspector-value, .choose-inspector-select {
+        font-size: 1rem;
+    }
+
+    .choose-inspector-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+

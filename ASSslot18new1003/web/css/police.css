@@ -1,0 +1,131 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+/* Police Hero Section */
+.police-hero {
+    background: url('../images/police.jpg') no-repeat center center;
+    background-size: 80% auto;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.police-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    z-index: 1;
+    position: absolute;
+    left: 100px; 
+    bottom: 200px; 
+}
+
+.hero-text {
+    text-align: left; 
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.hero-text p {
+    margin: 0; 
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+.btn-custom {
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #ff4e50; 
+    border-color: #ff4e50; 
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .police-hero {
+        height: 70vh; 
+    }
+
+    .hero-content {
+        left: 50px;
+        bottom: 150px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .btn-custom {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .police-hero {
+        height: 60vh;
+    }
+
+    .hero-content {
+        left: 20px;
+        bottom: 100px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .btn-custom {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
