@@ -15,6 +15,7 @@ Quản lý Đăng kiểm Khí thải Phương tiện
 -      Giao diện: Responsive, thân thiện với người dùng
 
 🔥 Tính năng chính
+
 ✅ Quản lý đăng ký và kiểm tra khí thải
 
 -      Chủ phương tiện đăng ký kiểm định, theo dõi lịch sử
@@ -23,7 +24,7 @@ Quản lý Đăng kiểm Khí thải Phương tiện
 
 -      Công nhân kiểm tra ghi nhận kết quả
 
-Cảnh sát giao thông tra cứu thông tin đăng kiểm
+-      Cảnh sát giao thông tra cứu thông tin đăng kiểm
 
 ✅ Theo dõi trạng thái đăng kiểm
 
