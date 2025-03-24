@@ -1,0 +1,172 @@
+<<<<<<< HEAD
+/* police.css */
+
+/* Nền và kiểu chữ */
+body {
+    background-color: #f5f5f5; /* Nền nhạt để không xung đột với navbar/footer */
+=======
+body {
+    background-color: #f5f5f5;
+>>>>>>> 9b0e173 (Cập nhật code)
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+/* Police Hero Section */
+.police-hero {
+    background: url('../images/police.jpg') no-repeat center center;
+    background-size: 80% auto;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.police-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+<<<<<<< HEAD
+    background: rgba(0, 0, 0, 0.6); /* Lớp tối để nội dung nổi bật */
+=======
+    background: rgba(0, 0, 0, 0.6);
+>>>>>>> 9b0e173 (Cập nhật code)
+}
+
+.hero-content {
+    z-index: 1;
+    position: absolute;
+<<<<<<< HEAD
+    left: 100px; /* Distance from the left edge */
+    bottom: 200px; /* Distance from the bottom edge */
+}
+
+.hero-text {
+    text-align: left; /* Align text to the left */
+=======
+    left: 100px; 
+    bottom: 200px; 
+}
+
+.hero-text {
+    text-align: left; 
+>>>>>>> 9b0e173 (Cập nhật code)
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    color: white;
+<<<<<<< HEAD
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Thêm bóng cho tiêu đề */
+}
+
+.hero-text p {
+    margin: 0; /* Remove default margin to avoid extra spacing */
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Thêm bóng cho mô tả */
+=======
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.hero-text p {
+    margin: 0; 
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+>>>>>>> 9b0e173 (Cập nhật code)
+}
+
+.btn-custom {
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+<<<<<<< HEAD
+    background-color: #ff4e50; /* Pink color on hover */
+    border-color: #ff4e50; /* Match border color with background on hover */
+=======
+    background-color: #ff4e50; 
+    border-color: #ff4e50; 
+>>>>>>> 9b0e173 (Cập nhật code)
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .police-hero {
+<<<<<<< HEAD
+        height: 70vh; /* Giảm chiều cao trên mobile */
+=======
+        height: 70vh; 
+>>>>>>> 9b0e173 (Cập nhật code)
+    }
+
+    .hero-content {
+        left: 50px;
+        bottom: 150px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .btn-custom {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .police-hero {
+        height: 60vh;
+    }
+
+    .hero-content {
+        left: 20px;
+        bottom: 100px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .btn-custom {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+

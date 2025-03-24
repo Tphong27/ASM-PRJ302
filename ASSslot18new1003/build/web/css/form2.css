@@ -1,0 +1,237 @@
+<<<<<<< HEAD
+/* form2.css */
+
+/* Style cho container form */
+
+.choose-inspector-container {
+    padding: 30px; /* Giữ nguyên padding để không tăng chiều cao */
+    background: #ffffff;
+    border-radius: 15px; /* Giữ bo góc lớn để hiện đại */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1); /* Giữ bóng đổ tinh tế */
+    margin-top: 20px; /* Giữ khoảng cách trên */
+    margin-bottom: 20px; /* Giữ khoảng cách dưới */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 700px; /* Tăng chiều rộng tối đa để form to hơn theo chiều ngang */
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; /* Đảm bảo form chiếm 90% chiều rộng viewport, tối đa 1000px */
+}
+
+.choose-inspector-container:hover {
+    transform: translateY(-3px); /* Nâng nhẹ khi hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Giữ bóng đổ lớn hơn khi hover */
+=======
+/* Style cho container form */
+.choose-inspector-container {
+    padding: 30px; 
+    background: #ffffff;
+    border-radius: 15px; 
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 700px; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; 
+}
+
+.choose-inspector-container:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); 
+>>>>>>> 9b0e173 (Cập nhật code)
+}
+
+/* Style cho tiêu đề form */
+.choose-inspector-title {
+<<<<<<< HEAD
+    font-size: 2.2rem; /* Giữ kích thước tiêu đề để nổi bật */
+    color: #1e3a8a; /* Giữ màu xanh đậm như trong ảnh */
+    font-weight: 600;
+    margin-bottom: 20px; /* Giữ khoảng cách dưới */
+=======
+    font-size: 2.2rem; 
+    color: #1e3a8a; 
+    font-weight: 600;
+    margin-bottom: 20px; 
+>>>>>>> 9b0e173 (Cập nhật code)
+    text-align: center;
+}
+
+/* Style cho các hàng thông tin */
+.choose-inspector-row {
+<<<<<<< HEAD
+    margin-bottom: 20px; /* Giữ khoảng cách giữa các hàng */
+}
+
+.choose-inspector-col {
+    padding: 0 15px; /* Giữ padding giữa các cột để không tăng chiều cao */
+=======
+    margin-bottom: 20px; 
+}
+
+.choose-inspector-col {
+    padding: 0 15px; 
+>>>>>>> 9b0e173 (Cập nhật code)
+}
+
+.choose-inspector-label {
+    font-weight: 600;
+<<<<<<< HEAD
+    color: #374151; /* Giữ màu xám đậm hơn để phù hợp với ảnh */
+    font-size: 1.2rem; /* Giữ kích thước nhãn */
+    margin-bottom: 8px; /* Giữ khoảng cách dưới nhãn */
+    display: block; /* Giữ nhãn hiển thị trên cùng một dòng */
+=======
+    color: #374151; 
+    font-size: 1.2rem; 
+    margin-bottom: 8px; 
+    display: block; 
+>>>>>>> 9b0e173 (Cập nhật code)
+}
+
+.choose-inspector-value {
+    color: #4a5568;
+<<<<<<< HEAD
+    font-size: 1.2rem; /* Giữ kích thước giá trị */
+    padding: 15px; /* Giữ padding để giống ảnh */
+    background: #f9f9f9; /* Giữ nền sáng hơn để nổi bật trên card trắng */
+    border-radius: 12px; /* Giữ bo góc */
+    border: 1px solid #e5e7eb; /* Giữ viền nhạt hơn */
+    word-break: break-word;
+    display: block; /* Giữ giá trị hiển thị dưới nhãn */
+=======
+    font-size: 1.2rem; 
+    padding: 15px; 
+    background: #f9f9f9; 
+    border-radius: 12px; 
+    border: 1px solid #e5e7eb; 
+    word-break: break-word;
+    display: block; 
+>>>>>>> 9b0e173 (Cập nhật code)
+}
+
+/* Style cho select trong form */
+.choose-inspector-select {
+<<<<<<< HEAD
+    border-radius: 12px; /* Giữ bo góc */
+    border: 1px solid #d1d5db; /* Giữ viền nhạt hơn */
+    padding: 14px; /* Giữ padding để giống ảnh */
+    font-size: 1.2rem; /* Giữ kích thước chữ */
+    background-color: #ffffff; /* Giữ nền trắng cho select */
+    width: 100%; /* Giữ select chiếm toàn bộ chiều rộng */
+=======
+    border-radius: 12px; 
+    border: 1px solid #d1d5db; 
+    padding: 14px; 
+    font-size: 1.2rem; 
+    background-color: #ffffff; 
+    width: 100%; 
+>>>>>>> 9b0e173 (Cập nhật code)
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choose-inspector-select:focus {
+<<<<<<< HEAD
+    border-color: #3b82f6; /* Giữ màu xanh đậm hơn để phù hợp với ảnh */
+    box-shadow: 0 0 6px rgba(59, 130, 246, 0.3); /* Giữ hiệu ứng focus xanh */
+=======
+    border-color: #3b82f6; 
+    box-shadow: 0 0 6px rgba(59, 130, 246, 0.3); 
+>>>>>>> 9b0e173 (Cập nhật code)
+    outline: none;
+}
+
+/* Style cho nút submit */
+.choose-inspector-button {
+<<<<<<< HEAD
+    background-color: #3b82f6; /* Giữ màu xanh đậm hơn để giống ảnh */
+    color: #ffffff;
+    border: none;
+    padding: 10px 35px; /* Giữ padding để nút không tăng chiều cao */
+    font-size: 1.5rem; /* Giữ kích thước chữ */
+    font-weight: 600;
+    border-radius: 12px; /* Giữ bo góc */
+    width: 100%;
+    margin-top: 25px; /* Giữ khoảng cách trên nút */
+=======
+    background-color: #3b82f6; 
+    color: #ffffff;
+    border: none;
+    padding: 10px 35px; 
+    font-size: 1.5rem; 
+    font-weight: 600;
+    border-radius: 12px; 
+    width: 100%;
+    margin-top: 25px; 
+>>>>>>> 9b0e173 (Cập nhật code)
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.choose-inspector-button:hover {
+<<<<<<< HEAD
+    background-color: #2563eb; /* Giữ màu xanh đậm hơn khi hover */
+    transform: scale(1.0); /* Giữ phóng to nhẹ khi hover */
+=======
+    background-color: #2563eb; 
+    transform: scale(1.0); 
+>>>>>>> 9b0e173 (Cập nhật code)
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .choose-inspector-container {
+        padding: 25px;
+<<<<<<< HEAD
+        margin: 20px 15px; /* Giữ margin để không chạm lề */
+        max-width: 85%; /* Tăng chiều rộng trên tablet nhưng giới hạn */
+        width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng viewport trên tablet */
+=======
+        margin: 20px 15px;
+        max-width: 85%; 
+        width: 100%; 
+>>>>>>> 9b0e173 (Cập nhật code)
+    }
+
+    .choose-inspector-title {
+        font-size: 1.8rem;
+    }
+
+    .choose-inspector-label, .choose-inspector-value, .choose-inspector-select {
+        font-size: 1.1rem;
+    }
+
+    .choose-inspector-button {
+        padding: 14px 30px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .choose-inspector-container {
+        padding: 20px;
+<<<<<<< HEAD
+        margin: 15px 10px; /* Giảm margin trên mobile */
+        max-width: 100%; /* Chiếm toàn bộ chiều rộng trên mobile */
+        width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng viewport trên mobile */
+=======
+        margin: 15px 10px; 
+        max-width: 100%; 
+        width: 100%; 
+>>>>>>> 9b0e173 (Cập nhật code)
+    }
+
+    .choose-inspector-title {
+        font-size: 1.5rem;
+    }
+
+    .choose-inspector-label, .choose-inspector-value, .choose-inspector-select {
+        font-size: 1rem;
+    }
+
+    .choose-inspector-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
