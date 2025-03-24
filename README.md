@@ -1,4 +1,4 @@
-Quản lý Đăng kiểm Khí thải Xe máy
+Quản lý Đăng kiểm Khí thải Phương tiện
 
 - Mô tả: Phát triển web application hỗ trợ kiểm tra và giám sát khí thải xe máy, giúp chủ phương tiện, cơ sở kiểm định, công nhân kiểm tra và cảnh sát giao thông quản lý quy trình đăng kiểm hiệu quả.
 
